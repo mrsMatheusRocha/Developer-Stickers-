@@ -1,37 +1,92 @@
-# Fundamentals of Web Performance Workshop
+# Developer Stickers
 
-Example Online store **Developer Stickers Online** for the Fundamentals of Web Performance Workshop.
+Welcome to **Developer Stickers**!
 
-## Getting Started
+This project is a web-based application built with **HTML** (56%), **JavaScript** (33%), and **CSS** (11%), focused on delivering a fast, fun, and performant sticker experience for developers.  
+Our mission: **Optimize Web Performance and Web Vitals** for every user.
 
-This is a webserver built on NodeJS and Express that servers plain HTML, CSS, JavaScript and Images. You need to have **Node ~20.0** to run this project.
+---
 
-1. Install Dependencies `npm install`
-2. Launch the Dev Server `npm start`
-3. Open the website at http://localhost:3000/
+## 🚀 Web Performance & Core Web Vitals
 
-For demonstration purposes, the website is also hosted:
+**Why care?**  
+Fast-loading, responsive sites create happy users and better SEO.  
+We optimize for the key metrics tracked by [Google's Core Web Vitals](https://web.dev/vitals/):
 
-- In Amsterdam at http://eu.devstickers.shop:3000/
-- In Amsterdam with HTTP/3 at https://eu.devstickers.shop/
-- Global CDN at https://www.devstickers.shop/
+### Core Metrics:
+- **Largest Contentful Paint (LCP):** Measures loading performance. Aim: <2.5 seconds.
+- **First Input Delay (FID):** Measures interactivity. Aim: <100 ms.
+- **Cumulative Layout Shift (CLS):** Measures visual stability. Aim: <0.1.
 
-### Instructor Setup
+### How We Optimize:
+- **Efficient Asset Delivery**
+  - Stickers and images use modern formats (SVG, WebP) and are compressed.
+  - Images and non-critical content are lazy-loaded.
+- **Fast, Clean HTML**
+  - Semantic HTML for quick parsing.
+  - Inlined critical CSS for faster rendering.
+- **Optimized JavaScript**
+  - Minimal, modular scripts.
+  - Async & deferred loading for non-essential code.
+- **Responsive CSS**
+  - Mobile-first, adaptive layouts.
+  - Styles are minified and purged for unused rules.
+- **Stable Layouts**
+  - Dimensions set for images and stickers to prevent layout shifts.
+- **Caching & CDN**
+  - Leverage browser caching and CDN delivery for quick repeat visits.
 
-To do deploys, you need to create the `.env` file from the `.env.template`. You'll also need to enable execute on the script, `chmod +x ./tools/deploy.sh`
+---
 
-## Workshop Info
-In this one-day training, you'll learn how to make your website *fast*, and keep it that way.You'll learn how to set performance goals for your project, how to measure them, and improve your website performance.
- 
-### Benefits
-- Know why website performance is important for your project and business success on the web.
-- Understand the Core Web Vitals and other performance metrics, and the behavior being measured.
-- Linking the business goals of your website to performance metrics.
-- Technology and tactics to improve your metrics and the user experience of your website.
+## 🏁 Quick Start
 
-### Summary
-Build faster websites and web applications by learning the current metrics and techniques for improving web performance. We’ll look at the psychology of web performance and how users see wait time on your site. Then learn about the new Core Web Vitals that Google uses to measure your page, like Largest Contentful Paint (LCP), Cumulative Layout Shift (CLS), and Interation to Next Paint (INP). Finally, we’ll discuss building a performance culture in your organization to start your applications fast from the beginning!
+1. **Clone the Repo**
+   ```bash
+   git clone https://github.com/mrsMatheusRocha/Developer-Stickers-.git
+   ```
+2. **Open `index.html`**
+   - No build step required—just open in your browser.
 
-### Course Slides
-- [Part 1](https://static.frontendmasters.com/resources/2024-09-26-web-perf-v2/web-perf-v2-slides_part1.pdf)
-- [Part 2](https://static.frontendmasters.com/resources/2024-09-26-web-perf-v2/web-perf-v2-slides_part2.pdf)
+---
+
+## 🛠️ Development Tips for Web Vitals
+
+- **Measure:**  
+  Use [Lighthouse](https://developers.google.com/web/tools/lighthouse), [WebPageTest](https://www.webpagetest.org/), or [Chrome Web Vitals Extension](https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma) to audit and improve.
+- **Optimize Images:**  
+  Compress before adding. Prefer SVG for stickers.
+- **Limit Third-Party Scripts:**  
+  Only add what’s essential—each extra script impacts performance.
+- **Minimize Main Thread Work:**  
+  Keep JS lean and avoid blocking rendering.
+
+---
+
+## 🤝 Contributing
+
+We welcome PRs that improve speed, stability, and web vitals!
+
+- Compress assets and refactor code for faster loads
+- Suggest new stickers (SVG preferred, optimized for size)
+- Help stabilize layouts and reduce shifts
+
+---
+
+## 🌟 Performance Targets
+
+| Metric                    | Target        |
+|---------------------------|--------------|
+| Largest Contentful Paint  | < 2.5s       |
+| First Input Delay         | < 100ms      |
+| Cumulative Layout Shift   | < 0.1        |
+| Total Page Weight         | < 150KB      |
+
+---
+
+## 📬 Feedback
+
+Open an [issue](https://github.com/mrsMatheusRocha/Developer-Stickers-/issues) for suggestions or performance ideas.
+
+---
+
+**Make developer stickers fun—and blazing fast!**
